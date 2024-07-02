@@ -36,7 +36,7 @@ export class TextAreaController implements Controller<TextAreaView> {
 			rows: this.rows,
 			placeholder: this.placeholder,
 		});
-		this.view.inputElement.addEventListener('keyup', this.onInputChange_);
+		this.view.inputElement.addEventListener('blur', this.onInputChange_);
 	}
 
 	private onInputChange_(e: KeyboardEvent): void {
